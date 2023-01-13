@@ -4,7 +4,6 @@ package com.shrek.validators;
 
 import com.shrek.model.EmploymentDTO;
 import com.shrek.model.ScoringDataDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import javax.validation.constraints.NotNull;
@@ -12,15 +11,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import static com.shrek.model.EmploymentDTO.EmploymentStatusEnum.UNEMPLOYED;
 
-/*Рабочий статус: Безработный → отказ; Самозанятый → ставка увеличивается на 1; Владелец бизнеса → ставка увеличивается на 3
-Позиция на работе: Менеджер среднего звена → ставка уменьшается на 2; Топ-менеджер → ставка уменьшается на 4
-Сумма займа больше, чем 20 зарплат → отказ
-Семейное положение: Замужем/женат → ставка уменьшается на 3; Разведен → ставка увеличивается на 1
-Количество иждивенцев больше 1 → ставка увеличивается на 1
-Возраст менее 20 или более 60 лет → отказ
-Пол: Женщина, возраст от 35 до 60 лет → ставка уменьшается на 3; Мужчина, возраст от 30 до 55 лет → ставка уменьшается на 3; Не бинарный → ставка увеличивается на 3
-Стаж работы: Общий стаж менее 12 месяцев → отказ; Текущий стаж менее 3 месяцев → отказ
-*/
+
 public class ScoringDataDTOValidator implements Validator {
 
     @Override

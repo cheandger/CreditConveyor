@@ -1,6 +1,4 @@
 package com.shrek.servises.impl;
-
-
 import com.shrek.model.LoanApplicationRequestDTO;
 import com.shrek.model.LoanOfferDTO;
 import com.shrek.servises.OffersService;
@@ -21,7 +19,7 @@ import java.util.*;
 
 public class OffersServiceImpl implements OffersService {
 
- // private final List<LoanOfferDTO> loanOfferDTOList;
+
 
     @Value("${BASE_RATE}")
     private BigDecimal BASE_RATE;
@@ -29,11 +27,9 @@ public class OffersServiceImpl implements OffersService {
     private BigDecimal IS_INSURANCE_RATE;
 
 
-
-
     @Override
-    @Autowired
-    public List<LoanOfferDTO> constructListOfPossibleLoanOffers(LoanApplicationRequestDTO loanApplicationRequestDTO) {
+
+    public List<LoanOfferDTO> offers (LoanApplicationRequestDTO loanApplicationRequestDTO) {
 
 
         DataBinder dataBinder = new DataBinder(loanApplicationRequestDTO);

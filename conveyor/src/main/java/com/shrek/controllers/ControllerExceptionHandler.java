@@ -1,7 +1,7 @@
 package com.shrek.controllers;
 import com.shrek.exceptions.BusinessException;
 import com.shrek.exceptions.TechnicalException;
-import org.apache.http.impl.execchain.TunnelRefusedException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;

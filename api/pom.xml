@@ -89,6 +89,7 @@
 							<apiPackage>com.shrek.controller</apiPackage>
 							<invokerPackage>com.shrek.invoker.handler</invokerPackage>
 								<configOptions>
+									<interfaceOnly>true</interfaceOnly>
 
 									<useTags>true</useTags>
 									<dateLibrary>java8</dateLibrary>

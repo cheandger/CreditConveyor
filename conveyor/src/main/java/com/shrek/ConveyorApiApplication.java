@@ -2,18 +2,15 @@ package com.shrek;
 
 import org.springframework.boot.SpringApplication;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication/*(exclude= {
-		DataSourceAutoConfiguration.class,
-		DataSourceTransactionManagerAutoConfiguration.class,
-		HibernateJpaAutoConfiguration.class,
-		AutoConfigureJdbc.class,
-		FlywayAutoConfiguration.class,
-		JdbcTemplateAutoConfiguration.class,
-		LiquibaseAutoConfiguration.class,
-		LiquibaseDataSource.class
-})*/
+
+@SpringBootApplication
+
+//(exclude= {WebMvcAutoConfiguration.class})
 
 public class ConveyorApiApplication {
 

@@ -9,7 +9,6 @@ import com.shrek.model.ScoringDataDTO;
 import com.shrek.servises.CalculationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.DataBinder;
 import org.springframework.validation.ObjectError;
@@ -23,6 +22,7 @@ import java.util.List;
 
 
 @Service
+
 public class CalculationServiceImpl implements CalculationService {
 
     @Value("${BASE_RATE}")
@@ -32,8 +32,8 @@ public class CalculationServiceImpl implements CalculationService {
 
 
     @Override
-    @Autowired
-    public CreditDTO createCreditDTO(ScoringDataDTO scoringDataDTO) {
+
+    public CreditDTO calculation(ScoringDataDTO scoringDataDTO) {
 
         DataBinder dataBinder = new DataBinder(scoringDataDTO);
         dataBinder.addValidators(new ScoringDataDTOValidator());

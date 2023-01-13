@@ -1,13 +1,8 @@
-.openapi-generator-ignore
 README.md
 pom.xml
 src/gen/java/main/com/shrek/controller/ApiUtil.java
 src/gen/java/main/com/shrek/controller/CalculationServiceApi.java
-src/gen/java/main/com/shrek/controller/CalculationServiceApiController.java
 src/gen/java/main/com/shrek/controller/OffersServiceApi.java
-src/gen/java/main/com/shrek/controller/OffersServiceApiController.java
-src/gen/java/main/com/shrek/invoker/handler/OpenApiGeneratorApplication.java
-src/gen/java/main/com/shrek/invoker/handler/RFC3339DateFormat.java
 src/gen/java/main/com/shrek/model/CreditDTO.java
 src/gen/java/main/com/shrek/model/CustomizedException.java
 src/gen/java/main/com/shrek/model/EmploymentDTO.java
@@ -15,8 +10,3 @@ src/gen/java/main/com/shrek/model/LoanApplicationRequestDTO.java
 src/gen/java/main/com/shrek/model/LoanOfferDTO.java
 src/gen/java/main/com/shrek/model/PaymentScheduleElement.java
 src/gen/java/main/com/shrek/model/ScoringDataDTO.java
-src/gen/java/main/org/openapitools/configuration/HomeController.java
-src/gen/java/main/org/openapitools/configuration/SpringDocConfiguration.java
-src/main/resources/application.properties
-src/main/resources/openapi.yaml
-src/test/java/com/shrek/invoker/handler/OpenApiGeneratorApplicationTests.java

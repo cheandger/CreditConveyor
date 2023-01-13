@@ -31,7 +31,7 @@ import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T14:01:51.506279800+03:00[Europe/Moscow]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T23:37:51.668990300+03:00[Europe/Moscow]")
 @Validated
 @Tag(name = "OffersService", description = "The LoanOfferVariations calculation")
 public interface OffersServiceApi {
@@ -49,7 +49,7 @@ public interface OffersServiceApi {
      *         or Refuse loan request (status code 200)
      */
     @Operation(
-        operationId = "constructListOfPossibleLoanOffers",
+        operationId = "offers",
         summary = "The LoanOfferVariations calculation",
         tags = { "OffersService" },
         responses = {
@@ -68,7 +68,7 @@ public interface OffersServiceApi {
         produces = { "application/json" },
         consumes = { "application/json" }
     )
-    default ResponseEntity<List<LoanOfferDTO>> constructListOfPossibleLoanOffers(
+    default ResponseEntity<List<LoanOfferDTO>> offers(
         @Parameter(name = "LoanApplicationRequestDTO", description = "", required = true) @Valid @RequestBody LoanApplicationRequestDTO loanApplicationRequestDTO
     ) {
         getRequest().ifPresent(request -> {

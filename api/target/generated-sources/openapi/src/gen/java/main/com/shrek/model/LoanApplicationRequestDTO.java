@@ -21,7 +21,7 @@ import javax.annotation.Generated;
  * LoanApplicationRequestDTO
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T14:01:51.506279800+03:00[Europe/Moscow]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T23:37:51.668990300+03:00[Europe/Moscow]")
 public class LoanApplicationRequestDTO {
 
   @JsonProperty("amount")
@@ -177,7 +177,7 @@ public class LoanApplicationRequestDTO {
    * Get birthdate
    * @return birthdate
   */
-  @NotNull @Valid @Pattern(regexp = "^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$") 
+  @NotNull @Valid 
   @Schema(name = "birthdate", required = true)
   public LocalDate getBirthdate() {
     return birthdate;

@@ -22,7 +22,7 @@ import javax.annotation.Generated;
  */
 
 @Schema(name = "CustomizedException", description = "Custom Exception")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T14:01:51.506279800+03:00[Europe/Moscow]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-12T23:37:51.668990300+03:00[Europe/Moscow]")
 public class CustomizedException {
 
   @JsonProperty("code")
